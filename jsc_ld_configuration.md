@@ -13,7 +13,7 @@
 | ``"rights"``      | (Optional) Copyright               |
 | ``"modified"``    | (Optional) xsd:datetime            |
 
-Below is a template of jsc-ld configuration which can be also found at [config.json](https://github.com/jiaoxlong/jsc-ld/blob/main/configs/config_template.json).
+Below is a template of json-schema-ld configuration which can be also found at [config.json](https://github.com/KNowledgeOnWebScale/json-schema-ld/blob/main/configs/config_template.json).
 
 ```json
     {

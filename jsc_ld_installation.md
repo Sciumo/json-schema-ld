@@ -1,10 +1,10 @@
 # How to install JSC-LD
 
-This jsc-ld package can be either installed from npm or setup from cloning the repository.
+This json-schema-ld package can be either installed from npm or setup from cloning the repository.
 
 ```bash
-git clone https://github.com/jiaoxlong/jsc-ld
-npm i jsc-ld
+git clone https://github.com/KNowledgeOnWebScale/json-schema-ld
+npm i json-schema-ld
 ```
 
 ## Usage
@@ -18,9 +18,9 @@ interoperability by means of representing JSON schema in RDF vocabularies
 
 Synopsis
 
-  $ jsc-ld --source json_schema.js --out out --prefix example --url
+  $ json-schema-ld --source json_schema.js --out out --prefix example --url
   "http://example.com/"
-  $ jsc-ld --source json_schema.js -p example -u "http://example.com"
+  $ json-schema-ld --source json_schema.js -p example -u "http://example.com"
 
 Options
 

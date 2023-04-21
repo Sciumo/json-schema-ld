@@ -23,8 +23,8 @@ const usage = commandLineUsage([
     {
         header:"Synopsis",
         content: [
-            '$ jsc-ld --source json_schema.js --out out --prefix example --url "http://example.com/"',
-            '$ jsc-ld --source json_schema.js -p example -u "http://example.com"',
+            '$ json-schema-ld --source json_schema.js --out out --prefix example --url "http://example.com/"',
+            '$ json-schema-ld --source json_schema.js -p example -u "http://example.com"',
         ]
     },
     {
@@ -75,7 +75,7 @@ const usage = commandLineUsage([
         ]
     },
     {
-        content: 'Project home: {underline https://github.com/jiaoxlong/jsc-ld}'
+        content: 'Project home: {underline https://github.com/KNowledgeOnWebScale/json-schema-ld}'
     }
 ]);
 

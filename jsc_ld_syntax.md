@@ -51,7 +51,7 @@ exampleshape:ExampleShape rdf:type sh:NodeShape;
     ].
 ```
 
-**NOTE**: In this example, the hypothetical `id` property is mapped to `identifier` in a URI, of which name prefix is predefined in a ref:[JSC-LD configuration](jsc_ld_configuration.md#jsc-ld-configuration) file with `base_url`.
+**NOTE**: In this example, the hypothetical `id` property is mapped to `identifier` in a URI, of which name prefix is predefined in a ref:[JSC-LD configuration](jsc_ld_configuration.md#json-schema-ld-configuration) file with `base_url`.
 Instead of giving a full path, one may also use `"ld.id": "identifier"` or `"ld.id": ${base_prefix}:identifier"` as a shortcut.
 
 `ld.id` can be used in combination with `ld.existing` when a property already exists in a vocabulary,

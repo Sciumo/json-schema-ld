@@ -47,14 +47,17 @@ export class Config{
      */
     public format:typeof N3FormatTypes[number];
     /**
-     * jsc-ld logger
+     * json-schema-ld logger
      */
     public logger:Logger
 
     constructor(cliArgs:CLIArguments, prefix:object=JSC_LD_PREFIX) {
-        this.logger = getLogger('jsc-ld');
+        this.logger = getLogger('json-schema-ld');
         this.cliArgs = cliArgs;
         this.format = cliArgs.format === undefined ? "Turtle" : cliArgs.format;
+        if( !cliArgs.prefix ){
+            throw new Error(`Prefix argument requried`);
+        }
         if (isValidPrefix(cliArgs.prefix))
             this._prefix = cliArgs.prefix;
         else
@@ -142,7 +145,7 @@ export function isValidPrefix(prefix:string){
  * @param uri namespace uri
  */
 export function isValidHttpURI(uri:string) {
-    return (uri.startsWith('http') || uri.startsWith('https'));
+    return uri && (uri.startsWith('http') || uri.startsWith('https'));
 }
 
 export function validate_path(path_to_file:string){
